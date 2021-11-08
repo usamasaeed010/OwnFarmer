@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SelectLanguage.SelectLanguageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/splash"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="2dp"
+                android:text="@string/app_name"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textColor="@color/green_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:text="Get The Best Farmer Products"
+                android:fontFamily="cursive"
+                android:textColor="@color/green_text"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/green_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textColor="@color/green_text"
+            android:text="Select Language"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/urdu_language_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="اردو"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:drawableStart="@drawable/ic_pakistan"
+                android:drawableLeft="@drawable/ic_english"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background_green"/>
+
+            <Button
+                android:id="@+id/english_language_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_background_white"
+                android:drawableStart="@drawable/ic_english"
+                android:drawableLeft="@drawable/ic_english"
+                android:fontFamily="serif"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:text="English"
+                android:textColor="@color/green_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

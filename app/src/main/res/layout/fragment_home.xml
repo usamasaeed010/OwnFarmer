@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/customer_screen_ll">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/sliderImage_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/latest_products_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/latest_products_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_products"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:layout_gravity="start"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/products_viewall_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_all"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:textColor="@color/color_seperator"
+                        android:fontFamily="casual"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latestProducts_rv"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/latest_services_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_services"
+                        android:textSize="16sp"
+                        android:gravity="start"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/services_viewall_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_all"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:textColor="@color/color_seperator"
+                        android:fontFamily="casual"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latestServices_rv"
+                    android:layout_margin="10dp"/>
+                <LinearLayout
+                    android:id="@+id/all_farmars_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all_farmers"
+                        android:textSize="16sp"
+                        android:gravity="start"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/all_farmars_viewall_TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_all"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:textColor="@color/color_seperator"
+                        android:fontFamily="casual"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/all_farmars_rv"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/farmer_screen_ll">
+
+                <LinearLayout
+                    android:id="@+id/latest_pr_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/latest_p_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_products"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:layout_gravity="start"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/all_farmer_product_RV"
+                    android:layout_margin="10dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/latest_ser_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/latest_ser_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latest_services"
+                        android:textSize="16sp"
+                        android:gravity="left"
+                        android:layout_gravity="start"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/all_farmer_ser_RV"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

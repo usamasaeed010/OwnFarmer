@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_farmer_LL"
+    android:layout_width="200dp"
+    android:layout_height="240dp"
+    android:layout_margin="8dp"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:id="@+id/img_home_all_farmer_home"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/product_name_tv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/green_text"
+        android:maxLines="1"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/product_price_tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/farmer_descript_tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+    <Button
+        android:id="@+id/add_cart_button_product"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="7dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:text="@string/view_detail"
+        android:fontFamily="serif"
+        android:background="@drawable/green_background_rounded"/>
+
+
+</LinearLayout>

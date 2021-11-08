@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:id="@+id/teacher_box_layout"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2.5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/inbox_user_IMG"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/profile_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp">
+
+            <TextView
+                android:id="@+id/inbox_name_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/name"
+                android:textColor="@android:color/black"
+                android:padding="3dp"
+                />
+
+            <TextView
+                android:id="@+id/inbox_message_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/message"
+                android:textColor="@android:color/black"
+                android:padding="3dp"
+                />
+
+            <TextView
+                android:id="@+id/inbox_time_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/time"
+                android:textColor="@android:color/black"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/teacher_box_layout"
+        android:background="#c2c2c2" />
+
+</RelativeLayout>

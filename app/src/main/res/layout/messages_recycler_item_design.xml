@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <!--            <me.virtualiz.blurshadowimageview.BlurShadowImageView-->
+        <!--                android:layout_width="@dimen/_40sdp"-->
+        <!--                android:layout_height="@dimen/_40sdp"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:elevation="@dimen/_5sdp"-->
+        <!--                app:v_shadowOffset="@dimen/_20sdp"-->
+        <!--                app:v_imageRound="@dimen/_80sdp"-->
+        <!--                app:v_imageSrc="@drawable/avatar" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImage_user_message"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/user_name_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/user_last_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:maxLines="2"
+                    android:textColor="#A1A1A1"
+                    android:textSize="11sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/last_msg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/cart_badge"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+</LinearLayout>
+

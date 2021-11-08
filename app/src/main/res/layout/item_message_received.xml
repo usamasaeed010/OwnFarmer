@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/recyclerViewChatMessageTextSending_recive"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/image_message_profile"
+        android:background="@drawable/default_message_text_background"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_message_profile"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        app:civ_border_color="@color/transparent"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/text_message_body_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_message_profile"
+        android:layout_toRightOf="@+id/image_message_profile"
+        android:background="@drawable/rounded_rectangle_orange"
+        android:padding="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
